@@ -2,6 +2,10 @@ domain: zeusville.com
 layout: go.kubebuilder.io/v2
 projectName: zeus-operator
 repo: github.com/jmrodri/zeus-operator
+resources:
+- group: test
+  kind: Test
+  version: v1
 version: 3-alpha
 plugins:
   go.sdk.operatorframework.io/v2-alpha: {}
