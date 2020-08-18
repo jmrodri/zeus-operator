@@ -1,0 +1,49 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+    operators.operatorframework.io/builder: operator-sdk-v1.0.0+git
+    operators.operatorframework.io/project_layout: go.kubebuilder.io/v2
+  name: zeus-operator.vX.Y.Z
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Test is the Schema for the tests API
+      displayName: Test
+      kind: Test
+      name: tests.test.zeusville.com
+      version: v1
+  description: The Mount Olympus of Operators
+  displayName: zeus-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: true
+    type: OwnNamespace
+  - supported: true
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - zeus
+  - olympus
+  - operator
+  links:
+  - name: Zeus Operator
+    url: https://zeus-operator.domain
+  maturity: alpha
+  provider:
+    name: zeusville
+    url: https://github.com/jmrodri/zeus-operator
+  version: 0.0.0
