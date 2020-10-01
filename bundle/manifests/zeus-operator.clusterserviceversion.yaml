@@ -90,7 +90,7 @@ spec:
                 - --enable-leader-election
                 command:
                 - /manager
-                image: controller:latest
+                image: docker.io/jmrodri/zeus-operator:0.0.1
                 name: manager
                 resources:
                   limits:
